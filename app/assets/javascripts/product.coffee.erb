@@ -4,7 +4,7 @@
 
 $ ->
   pixelPerfect '<%= asset_url("01.png")%>', '0.5'
-  $('.product').on 'click', ->
-    $('.product').removeClass('active')
+  $('.products .product').on 'click', ->
+    $('.products .product').removeClass('active')
     $(this).addClass('active')
     false
