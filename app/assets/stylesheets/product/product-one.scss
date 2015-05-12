@@ -23,7 +23,7 @@
       }
     }
     .image-product {
-      @include make-xs-column(4);
+      @include make-xs-column(5);
       text-align: right;
       img{
         max-width: 100%;
@@ -70,7 +70,60 @@
       }
     }
     .sidebar{
-      @include make-xs-column(5)
+      @include make-xs-column(4);
+      .shops-block{
+        background-color: $brand-primary;
+        padding: 8px;
+        margin-bottom: 25px;
+
+        .title{
+          font-size: 30px;line-height: 39px;
+          color: #fff;
+          margin-bottom: 10px;
+          margin-left: 10px;
+        }
+        .shop{
+          background-color: #fff;
+          padding: 24px 14px;
+          color: #000;
+          .name{float: left; line-height: 24px;}
+          .price{float: right; font-size: 18px; line-height: 24px; margin-bottom: 8px;}
+          .button{
+            float: right;
+            @include gradient-vertical($brand-primary, darken($brand-primary, 20%), 0%, 100%);
+            padding: 2px 8px 4px;
+            border: 1px solid darken($brand-primary, 30%);
+            border-radius: 4px;
+            color: #fff;
+            text-shadow: 1px 1px darken($brand-primary, 50%);
+            box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5);
+            &:active{
+              box-shadow: inset 0px 1px 0.5px rgba(0, 0, 0, 0.5);
+              padding-top: 3px;
+              padding-bottom: 3px;
+            }
+          }
+          margin-bottom: 1px;
+        }
+      }
+      .characteristics{
+        background-color: #575FF9;
+        padding: 8px;
+        .title{
+          font-size: 30px;line-height: 39px;
+          color: #fff;
+          margin-bottom: 10px;
+          margin-left: 10px;
+        }
+        .wrapper{
+          background-color: #fff;
+          padding: 24px 14px;
+          color: #000;
+          font-weight: 200;
+          .name{float: left;   line-height: 19px;}
+          .value{float: right; line-height: 19px; margin-bottom: 10px;}
+        }
+      }
     }
   }
 }

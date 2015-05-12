@@ -1,0 +1,8 @@
+<div class="shop">
+  <div class="name"><%= shop[:name]%></div>
+  <div class="price"><%= number_to_currency(shop[:price],
+                                format: "%n %u")%></div>
+  <div class="clearfix"></div>
+  <a href="#" class="more">Подробнее</a>
+  <button class="button">Купить с доставкой</button>
+</div>

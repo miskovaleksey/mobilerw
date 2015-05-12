@@ -7,7 +7,12 @@
   {img: "p02.png",brand: "Samsung", name: "Galaxy S6 Edge", price:"32,000"},
   {img: "p02.png",brand: "Samsung", name: "Galaxy S6 Edge", price:"32,000"},
   {img: "p02.png",brand: "Samsung", name: "Galaxy S6 Edge", price:"32,000"},
-  ]%>
+  ]
+  shops = [
+    {name: "Сотмаркет.ru", price: "32,200"},
+    {name: "Ozon.ru",      price: "32,200"},
+  ]
+  %>
 
 <section class="menu-products">
   <div class="container">
@@ -48,7 +53,27 @@
 
       </div>
       <div class="sidebar">
-        <div class="shop"></div>
+        <div class="shops-block">
+          <div class="title">В магазинах</div>
+          <%= render partial: 'shop', collection: shops %>
+        </div>
+        <div class="characteristics">
+          <div class="title">Характеристики</div>
+          <div class="wrapper">
+            <div class="name">Размер экрана</div>
+            <div class="value">14 дюймов</div>
+            <div class="clearfix"></div>
+
+            <div class="name">Фронтальная камера</div>
+            <div class="value">14 Мпикс</div>
+            <div class="clearfix"></div>
+
+            <div class="name">Разрешение экрана</div>
+            <div class="value">800x600</div>
+            <div class="clearfix"></div>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
