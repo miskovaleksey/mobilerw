@@ -13,5 +13,13 @@
  */
  // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
+@import "variables";
 @import "bootstrap";
-@import "product";@import "fonts";
+@import "fonts";
+
+@import "header";
+@import "product";
+
+body{
+  // background-image: asset_url('01.png');
+}
