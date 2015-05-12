@@ -18,8 +18,5 @@
 @import "fonts";
 
 @import "header";
-@import "product";
-
-body{
-  // background-image: asset_url('01.png');
-}
+@import "product/menu-products";
+@import "product/product-one";
