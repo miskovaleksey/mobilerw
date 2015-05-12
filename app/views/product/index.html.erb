@@ -11,20 +11,9 @@
 
 <section class="products">
   <div class="container">
-    <% products.each_with_index do |p, index| %>
-    <article class="product <%= index == 0 ? 'active': '' %>">
-      <a href="#" class="product-link">
-        <div class="image">
-          <%= image_tag p[:img] %>
-        </div>
-        <div class="description">
-          <div class="brand"><%= p[:brand] %></div>
-          <div class="name"><%= p[:name] %></div>
-          <div class="price">От <%= number_to_currency(p[:price],
-                                    format: "%n %u")%> </div>
-        </div>
-      </a>
-    </article>
-    <% end %>
+    <%= render partial: "product", collection: products %>
   </div>
 </section>
+<article class="">
+
+</article>

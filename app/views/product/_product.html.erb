@@ -1,0 +1,13 @@
+<article class="product <%= product_counter == 0 ? 'active': '' %>">
+  <a href="#" class="product-link">
+    <div class="image">
+      <%= image_tag product[:img] %>
+    </div>
+    <div class="description">
+      <div class="brand"><%= product[:brand] %></div>
+      <div class="name"><%= product[:name] %></div>
+      <div class="price">От <%= number_to_currency(product[:price],
+                                format: "%n %u")%> </div>
+    </div>
+  </a>
+</article>
